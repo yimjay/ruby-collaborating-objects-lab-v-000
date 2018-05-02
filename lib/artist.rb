@@ -21,7 +21,7 @@ class Artist
   
   def self.find_or_create_by_name(name)
     if @@all.include?(name)
-      @@all.find(name)
+      @@all.find {|song| song.name == name}
     else
       name = Artist.new(name)
     end
