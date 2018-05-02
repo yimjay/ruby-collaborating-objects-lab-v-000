@@ -10,7 +10,7 @@ class MP3Importer
   end
   
   def import
-    artist, song, genre = 
+    file
   end
 
 end
