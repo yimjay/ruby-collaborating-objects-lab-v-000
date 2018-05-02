@@ -12,11 +12,15 @@ class Artist
   end
   
   def self.find_or_create_by_name(name)
-    if name exists
-      
+    if @@all.include?(name)
+      name
     else
       name = Artist.new(name)
     end
+  end
+  
+  def print_songs
+    puts @songs
   end
  
 end
