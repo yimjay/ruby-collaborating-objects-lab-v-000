@@ -7,7 +7,9 @@ class Artist
     @songs = []
   end
   
-  def self.all
+  
+  
+  def save
     @@all << self
   end
   
@@ -20,7 +22,7 @@ class Artist
   end
   
   def print_songs
-    puts @songs.each {|song| puts song.name}
+    @songs.each {|song| puts song.name}
   end
  
 end
